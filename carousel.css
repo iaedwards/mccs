@@ -109,15 +109,8 @@ table.tuition td {
 table.tuition {
     color: #000000;
     font: normal 11px arial, sans-serif;
-    border: #000000 9px solid;
     }
 
-table.tuition {
-    color: #FFFFFF;
-    font: bold 14px arial, sans-serif;
-    white-space: nowrap;
-    background-color: #92A2C2;
-    }
 
 
 
