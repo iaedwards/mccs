@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>About &middot; Mt. Carmel Christian School</title>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script> 
-      $(function(){
-        $("#header").load("header.html"); 
-        $("#navbar").load("navbar.html"); 
-        $("#footer").load("footer.html"); 
-      });
-    </script>
+<head>
+  <title>About &middot; Mt. Carmel Christian School</title>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#navbar").load("navbar.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script>
     <!-- Header
     ================================================== -->
     <div id="header"></div><!-- /.header -->
@@ -32,87 +32,57 @@
           <img class="img-circle" src="images/about/historytemp.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>School History</h2>
           <p>Mt. Carmel Christian School is a private, independent, Christian school located in Mt. Pleasant, Pennsylvania.  Founded in 1974 by Dr. William Hoffman, former pastor of Mt. Carmel Community Church, the school enrolls students in grades K-12.  The late Dr. Hoffman saw the need in his community to offer high quality education grounded in the tenets of the Christian faith as an alternative to public education. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#schoolhistory">Read more &raquo;</button></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/about/facultytemp.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Faculty & Staff</h2>
           <p>Our outstanding faculty are here not only because of their knowledge and passion, but because of a calling to be here.  The faculty is composed of nine full-time teachers and three part-time teachers. Nine hold Bachelor level degrees, and three have gone on to achieve Master credentials in their chosen fields.</p>
-          <p><a class="btn btn-default" href="staff.html#staff" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="staff.html#staff" role="button">Read more &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/about/aboutpcc.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Parent Connection Committee</h2>
           <p>The Parent Connection Committee (PCC) is an advisory body composed of faculty, parents, and alumni that facilitates internal relations within the school family as well as outreach to the community at large. </p>
-          <p><a class="btn btn-default" href="pcc.html#pcc" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="pcc.html#pcc" role="button">Read more &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
+      <!-- Modal -->
+      <div class="modal fade" id="schoolhistory" role="dialog">
+        <div class="modal-dialog">
 
-      <!-- START THE FEATURETTES -->
-
-      <div id="kindergarten">
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Kindergarten. <span class="text-muted">Starting Off Right</span></h2>
-            <p class="lead">Laying a solid foundation to enable successful learning throughout their school years.</p>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">History of Mt. Carmel Christian School</h4>
+            </div>
+            <div class="modal-body">
+              <p>Mt. Carmel Christian School is a private, independent, Christian school located in Mt. Pleasant, Pennsylvania. Founded in 1974 by Dr. William Hoffman, former pastor of Mt. Carmel Community Church, the school enrolls students in grades K-12. The late Dr. Hoffman saw the need in his community to offer high quality education grounded in the tenets of the Christian faith as an alternative to public education.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="images/about/aboutkindergarten.jpg" alt="Generic placeholder image">
-          </div>
+
         </div>
       </div>
 
-      <div id="elementary">
-        <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Grades 1-6 <span class="text-muted">Growing in Grace</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-      </div>
-
-      <div id="middleschool">
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Junior High <span class="text-muted">Transitioning</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-       </div>
-
-      <div id="highschool">
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Senior High <span class="text-muted">Finishing in Stride</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
 
       <!-- Footbar
       ================================================== -->
       <div id="footer"></div><!-- /.footer -->
-  </body>
-</html>
+      <script>
+
+  $(document).ready(function() {
+
+    if(window.location.href.indexOf('#schoolhistory') != -1) {
+      $('#schoolhistory').modal('show');
+    }
+
+  });
+      </script>
+    </body>
+    </html>
