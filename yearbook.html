@@ -1,6 +1,7 @@
-<!-- NAVBAR
-================================================== -->
-<div class="navbar-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div class="navbar-wrapper">
     <div class="container">
 
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -19,9 +20,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about.html#schoolhistory">Overview &middot; Organization</a></li>
-                  <li><a href="facultyandstaff.html">Faculty & Staff </a></li>
-                  <li><a href="pcc.html">Parent Connection Committee</a></li>
+                  <li><a href="about.html#schoolhistory">School History</a></li>
+                  <li><a href="about.html#facultyandstaff">Faculty & Staff </a></li>
+                  <li><a href="about.html#parentconnectioncommittee">Parent Connection Committee</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -53,10 +54,11 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Student Life <span class="caret"></span></a>
                 <ul class="dropdown-menu">
+                  <li><a href="studentlife.html#news">News</a></li>
                   <li><a href="lunches.html">Lunch Program</a></li>
                   <li><a href="studentlife.html#veteransday">Veterans Day Program</a></li>
                   <li><a href="studentlife.html#christmasprogram">Christmas Program</a></li>
-                  <li><a href="yearbook.html#">Yearbook</a></li>
+                  <li><a href="studentlife.html#yearbook">Yearbook</a></li>
                   <li><a href="studentlife.html#library">Library</a></li>
                   <li><a href="documents.html#documents">Important Documents</a></li>
                 </ul>
@@ -90,31 +92,61 @@
         </div>
       </nav>
 
-      <div class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-          <div align="center">
-            <a href="mailto:mymountcarmel@gmail.com">
-              <button type="button" class="btn btn-default" style="border:none">
-                <span class="fa fa-envelope-o fa-4x" style="color:#E80000"></span>
-              </button>
-            </a>
-            <a href="https://twitter.com/MtCarmelCougars">
-              <button type="button" class="btn btn-default" style="border:none">
-                <span class="fa fa-twitter fa-4x" style="color:#4099ff"></span>
-              </button>
-            </a>
-            <a href="https://instagram.com/mt.carmel.cougars/">
-              <button type="button" class="btn btn-default" style="border:none">
-                <span class="fa fa-instagram fa-4x" style="color:#3f729b"></span>
-              </button>
-            </a>
-            <a href="https://www.facebook.com/MountCarmel1974">  
-            <button type="button" class="btn btn-default" style="border:none">
-              <span class="fa fa-facebook fa-4x" style="color:#3b5998"></span>
-            </button>
-           </div> 
-        </div>
-      </div>  
-
     </div>
   </div>
+  <title>About &middot; Mt. Carmel Christian School</title>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#navbar").load("navbar.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script>
+    <!-- Header
+    ================================================== -->
+    <div id="header"></div><!-- /.header -->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+      Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+      </div>
+      <p></p>
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Reflections 2015</h1>
+        <p class="lead">Secure your copy of the Official MCCS 2015-2016 Yearbook Today.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Download the Order Form</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Safari bug warning!</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+      <div>
+        <!-- Site footer -->
+        <footer class="footer">
+          <p> Company 2014</p>
+        </footer>
+
+      </div> <!-- /container -->
+
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+      <span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span>
+
+      <div id="footer"></div><!-- /.footer -->
+    </body>
+    </html>
